@@ -1,0 +1,15 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "error:account.payment.group:"
+msgid "The party %s has no a country neither a state in its address."
+msgstr "El tercer %s no té un país ni una provincia a la seva adreça."
+
+msgctxt "error:account.payment.group:"
+msgid "The party %s has no an address to add to the file."
+msgstr "El tercer %s no té una adreça per afegir al fitxer."
+
+msgctxt "selection:account.payment.journal,process_method:"
+msgid "CSB 34-01"
+msgstr "CSB 34-01"
