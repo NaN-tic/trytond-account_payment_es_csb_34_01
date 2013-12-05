@@ -225,20 +225,20 @@ class Group:
             return write([record])
 
         values = Group.set_default_csb34_01_payment_values(group)
-        text = set_header_record_process_method_1() + '\r\n'
+        text = set_header_record_process_method_1()
         values['record_count'] += 1
-        text += set_header_record_process_method_2() + '\r\n'
+        text += set_header_record_process_method_2()
         values['record_count'] += 1
-        text += set_header_record_process_method_3() + '\r\n'
+        text += set_header_record_process_method_3()
         values['record_count'] += 1
-        text += set_header_record_process_method_4() + '\r\n'
+        text += set_header_record_process_method_4()
         values['record_count'] += 1
         for receipt in values['receipts']:
-            text += set_recipient_record_process_method_1() + '\r\n'
+            text += set_recipient_record_process_method_1()
             values['record_count'] += 1
-            text += set_recipient_record_process_method_2() + '\r\n'
+            text += set_recipient_record_process_method_2()
             values['record_count'] += 1
             values['payment_count'] += 1
         values['record_count'] += 2
-        text += set_record_of_totals() + '\r\n'
+        text += set_record_of_totals()
         group.attach_file(text)
