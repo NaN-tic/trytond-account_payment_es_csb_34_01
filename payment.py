@@ -4,12 +4,14 @@
 # the full copyright notices and license terms.
 from trytond.pool import PoolMeta
 import logging
+
 try:
     from retrofix import Record, write, c34_01
 except ImportError:
+    logger = logging.getLogger(__name__)
     message = ('Unable to import retrofix library.\n'
                'Please install it before install this module.')
-    logging.getLogger('account_payment_es_csb_34_01').error(message)
+    logger.error(message)
     raise Exception(message)
 
 __all__ = [
